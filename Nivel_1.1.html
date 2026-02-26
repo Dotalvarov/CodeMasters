@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/PSM2.css">
+  <script src="JavaScript/ayuda.js"></script>
+   <script src="JavaScript/sweetalert2.all.min.js"></script>
+  <script src="JavaScript/Nivel 1.1.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="IMAGENES/Fondosylogos/Logo2.png">
+  <title>Preguntas selección multiple</title>
+</head>
+
+<body>
+
+
+    <div id="Enunciado">
+      <h3>Cuando queremos que un personaje aparezca directamente en un lugar específico del escenario, 
+        usamos coordenadas (X, Y). El bloque ir a posición sirve para moverlo instantáneamente, pero es fácil 
+        confundirlo con un movimiento animado.</h3>
+      <img src="IMAGENES/Preguntas selección múltiple/marco-enunciado.png" alt="">
+    </div>
+
+
+    <div id="imgcont"><img src="IMAGENES/Preguntas selección múltiple/scratch p2.png" alt="IMAGEN"></div>
+
+
+  <!-- AYUDA-->
+  <div class="masc">
+    <button id="boton">
+      <img src="IMAGENES/Pantalla de carga/tortugapixel.png" alt="">
+    </button>
+  </div>
+  <div class="contenedor" id="contenedor">
+    <div class="ayuda">
+      <img src="IMAGENES/Sopa de letras/marco-sopa.png" alt="">
+      <p class="p" id="mensaje">
+        Responde la pregunta de acuerdo con la siguiente información.
+      </p>
+      <br></br>
+      <button type="button" id="close" value="close">
+        <img src="IMAGENES/botones/cerrar.png">
+      </button>
+    </div>
+  </div>
+
+
+  <div id="need">¿Necesitas ayuda?</div>
+  <div class="letra"><img src="IMAGENES/Fondosylogos/marco-sub.png" alt="">
+    <h1>Nivel 1.1</h1>
+  </div>
+
+
+  <div class="preg"> <img src="IMAGENES/Preguntas selección múltiple/marcoresp.png">
+    <div id="resp">
+    
+      <h2> ¿Qué ocurre cuando usas el bloque ir a posición x: 0 y: 0?</h2> 
+       
+      <section name= "pregunta1">
+       <form id="pregu">
+
+      <label> 
+      <h2> <input type="radio" name="respuesta" value="A">A. El personaje desaparece del escenario sin explicación alguna.</h2>
+      </label>
+
+      <label>
+      <h2><input type="radio" name="respuesta" value="B">B. El personaje se mueve lentamente hasta la posición indicada.</h2>
+      </label>
+
+       <label>
+      <h2><input type="radio" name="respuesta" value="C">C. El personaje se teletransporta instantáneamente a la posición</h2>
+      </label>
+
+       <label>
+      <h2><input type="radio" name="respuesta" value="D">D. El personaje detecta si está tocando a otro objeto o sprite.</h2>
+      </label>
+      </section>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

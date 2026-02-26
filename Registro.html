@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="CSS/Registro.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="IMAGENES/Fondosylogos/Logo2.png" />
+  <script src="JavaScript/sweetalert2.all.min.js"></script>
+  <script src="JavaScript/Registro.js"></script>
+  <title>Registro</title>
+</head>
+
+<body>
+  <div>
+    <img src="IMAGENES/Fondosylogos/logo transparente.png" alt="logo" id="logo" />
+  </div>
+
+  <div id="contenedor">
+    <section class="form-login">
+      <img src="IMAGENES/Registro/marco_RA1.png" alt="" />
+      <h3>Registro</h3><br>
+      <form action="Iniciar sesión.html" method="post">
+        <input class="controles" type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+        <input class="controles_1" type="email" id="email" name="email" placeholder="Correo Electronico" required>
+        <input class="controles_2" type="password" id="clave" name="clave" placeholder="Contraseña" required>
+        <input class="boton" type="button" id="Registrar" value="Registrar" />
+      </form>
+      <p id="si_cuenta"><a href="Iniciar sesión.html">¿Tienes una cuenta? ¡Inicia Sesión!
+        </a></p>
+      
+    </section>
+  </div>
+</body>
+
+</html>

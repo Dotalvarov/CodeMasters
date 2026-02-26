@@ -1,0 +1,431 @@
+body {
+  background-image: url(../IMAGENES/Fondosylogos/Fondo\ negro.jpeg);
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  user-select: none;
+}
+
+#Inicio {
+  position: relative;
+  top: 70px;
+}
+
+#logo {
+  width: 320px;
+  height: 220px;
+  position: relative;
+  left: 0px;
+  top: 60px;
+}
+
+#jugar {
+  width: 350px;
+  height: 220px;
+  position: relative;
+  left: 500px;
+  top: 100px;
+}
+
+#jugar:hover {
+  transform: scale(1.1);
+}
+
+#creditos {
+  width: 250px;
+  height: 150px;
+  position: relative;
+  left: 590px;
+  top: -7px;
+}
+
+#creditos:hover {
+  transform: scale(1.1);
+}
+
+#acerca-de {
+  width: 250px;
+  height: 149px;
+  position: relative;
+  right: 450px;
+  top: -7px;
+}
+
+#acerca-de:hover {
+  transform: scale(1.1);
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*                         RESPONSIVE                           */
+/*══════════════════════════════════════════════════════════════*/
+
+
+@media (max-width: 320px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417x914px\)negro.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Inicio {
+    position: relative;
+    top: 4vh;
+    text-align: center;
+  }
+
+  #logo {
+    width: 60%;
+    height: auto;
+    top: 7vh;
+    left: 0;
+  }
+
+  #jugar,
+  #acerca-de,
+  #creditos {
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 8vh;
+    display: block;
+    margin: 2vh auto;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 400px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417x914px\)negro.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Inicio {
+    position: relative;
+    top: 4vh;
+    text-align: center;
+  }
+
+  #logo {
+    width: 70%;
+    height: auto;
+    top: 7vh;
+    left: 0;
+  }
+
+  #jugar,
+  #acerca-de,
+  #creditos {
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 8vh;
+    display: block;
+    margin: 2vh auto;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 539px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417x914px\)negro.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Inicio {
+    position: relative;
+    top: 6vh;
+    text-align: center;
+  }
+
+  #logo {
+    width: 70%;
+    height: auto;
+    left: 0;
+    top: 8vh;
+  }
+
+  #jugar,
+  #acerca-de,
+  #creditos {
+    width: 50%;
+    height: auto;
+    left: 0;
+    top: 10vh;
+    display: block;
+    margin: 2vh auto;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417x914px\)negro.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Inicio {
+    position: relative;
+    top: 6vh;
+    text-align: center;
+  }
+
+  #logo {
+    width: 60%;
+    height: auto;
+    left: 0;
+    top: 6vh;
+  }
+
+  #jugar,
+  #acerca-de,
+  #creditos {
+    width: 40%;
+    height: auto;
+    left: 0;
+    top: 5vh;
+    display: block;
+    margin: 2vh auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 1000px) and (max-height: 1370px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417x914px\)negro.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Inicio {
+    position: relative;
+    top: 8vh;
+    text-align: center;
+  }
+
+  #logo {
+    width: 63%;
+    height: auto;
+    top: 3vh;
+    left: 0;
+  }
+
+  #jugar,
+  #acerca-de,
+  #creditos {
+    width: 40%;
+    height: auto;
+    left: 25%;
+    top: 1vh;
+    display: inline-block;
+    margin: 2vh 5vw;
+
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) and (min-height: 590px) and (max-height: 610px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Inicio {
+    position: relative;
+    top: 70px;
+  }
+
+  #logo {
+    width: 320px;
+    height: 220px;
+    position: relative;
+    left: 0px;
+    top: 60px;
+  }
+
+  #jugar {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    left: 380px;
+    top: 100px;
+  }
+
+  #creditos {
+    width: 220px;
+    height: 150px;
+    position: relative;
+    left: 420px;
+    top: -7px;
+  }
+
+
+  #acerca-de {
+    width: 220px;
+    height: 149px;
+    position: relative;
+    right: 420px;
+    top: -7px;
+  }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Inicio {
+    position: relative;
+    top: 70px;
+  }
+
+  #logo {
+    width: 360px;
+    height: 240px;
+    position: relative;
+    left: 10px;
+    top: 60px;
+  }
+
+  #jugar {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    left: 490px;
+    top: 160px;
+  }
+
+
+  #creditos {
+    width: 250px;
+    height: 170px;
+    position: relative;
+    left: 560px;
+    top: -5px;
+  }
+
+  #acerca-de {
+    width: 250px;
+    height: 169px;
+    position: relative;
+    right: 450px;
+    top: 0px;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1800px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Inicio {
+    position: relative;
+    top: 70px;
+  }
+
+  #logo {
+    width: 380px;
+    height: 240px;
+    position: relative;
+    left: 10px;
+    top: 200px;
+  }
+
+  #jugar {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    left: 560px;
+    top: 230px;
+  }
+
+
+  #creditos {
+    width: 250px;
+    height: 170px;
+    position: relative;
+    left: 650px;
+    top: 100px;
+  }
+
+  #acerca-de {
+    width: 250px;
+    height: 169px;
+    position: relative;
+    right: 410px;
+    top: 100px;
+  }
+}
+
+@media (min-width: 1801px) and (max-width: 2560px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Inicio {
+    position: relative;
+    top: 70px;
+  }
+
+  #logo {
+    width: 380px;
+    height: 260px;
+    position: relative;
+    left: 10px;
+    top: 200px;
+  }
+
+  #jugar {
+    width: 370px;
+    height: 270px;
+    position: relative;
+    left: 800px;
+    top: 230px;
+  }
+
+
+  #creditos {
+    width: 270px;
+    height: 190px;
+    position: relative;
+    left: 920px;
+    top: 70px;
+  }
+
+  #acerca-de {
+    width: 270px;
+    height: 189px;
+    position: relative;
+    right: 300px;
+    top: 60px;
+  }
+}

@@ -1,0 +1,167 @@
+// Archivo JavaScript
+var n1 = Math.floor(Math.random() * 2) + 1;
+var x = n1.toString(10);
+var imagen = ""; //cual rompecabezas
+//n1 = 1;
+var sitio = ""; //Entorno Grafico
+var lugar = "";
+var ubicada = 0; 
+
+function contador() {
+    //alert("Zapatilla de queso ja");
+}
+
+switch (n1) {
+    case 1:
+        imagen = "movil1";
+        sitio = "entorno1";
+        lugar = "padre1";
+        break;
+    case 2: 
+        imagen = "movil2";
+        sitio = "entorno2";
+        lugar = "padre2";
+        break;
+}
+
+var piezas = document.getElementsByClassName(imagen);
+document.getElementById(sitio).style.display = "block";
+
+var tamWidht = [134, 192, 134, 163, 134, 163, 134, 192, 134];
+var tamheight = [163, 134, 163, 134, 192, 134, 163, 134, 163];
+
+for (var i = 0; i < piezas.length; i++) {
+    piezas[i].setAttribute("width", tamWidht[i]);
+    piezas[i].setAttribute("height", tamheight[i]);
+    piezas[i].setAttribute("x", Math.floor(Math.random() * 8 + 1));
+    piezas[i].setAttribute("y", Math.floor(Math.random() *  259  + 80));
+    //habilitamos el movimiento de las piezas
+    piezas[i].setAttribute("onmousedown", "seleccionarElemento(evt)");
+}
+
+//definimos las variables para la informacion de movimiento
+var elementSelect = 0;
+var currentX = 0;
+var currentY = 0;
+var currentPosX = 0;
+var currentPosY = 0;
+
+function seleccionarElemento(evt) {
+    elementSelect = reordenar(evt);
+    currentX = evt.clientX;
+    currentY = evt.clientY;
+    currentPosX = parseFloat(elementSelect.getAttribute("x"));
+    currentPosY = parseFloat(elementSelect.getAttribute("y"));
+    //Agregamos el evento del movimiento a la pieza
+    elementSelect.setAttribute("onmousemove", "moverElemento(evt)");
+}
+
+function moverElemento(evt) {
+    var dx = evt.clientX - currentX;
+    var dy = evt.clientY - currentY;
+    currentPosX = currentPosX + dx;
+    currentPosY = currentPosY + dy;
+    //document.getElementById("puntos").textContent = "X -> " + currentPosX + " Y -> " + currentPosY;
+    elementSelect.setAttribute("x", currentPosX);
+    elementSelect.setAttribute("y", currentPosY);
+    // volvemos a guardar la posicion del mouse
+    currentX = evt.clientX;
+    currentY = evt.clientY;
+    // al soltar el click del mouse debemos soltar lz pieza elegida
+    elementSelect.setAttribute("onmouseout", "deseleccionarElemento(evt)");
+    elementSelect.setAttribute("onmouseup", "deseleccionarElemento(evt)");
+    // verficamos si la pieza esta en la posicion correcta
+    iman();
+}
+
+function deseleccionarElemento(evt) {
+    if (elementSelect != 0) {
+        elementSelect.removeAttribute("onmousemove");
+        elementSelect.removeAttribute("onmouseout");
+        elementSelect.removeAttribute("onmouseup");
+        elementSelect = 0;
+    }
+
+    chequeo();
+if (ubicada == 9) {
+  Swal.fire({
+    title: "¡Correcto!",
+    text: "Has completado el rompecabezas",
+    icon: "success",
+    timer: 5000,
+    timerProgressBar: true,
+    showConfirmButton: false,
+    didClose: () => {
+      window.open("Ganaste.html", "_self");
+    }
+  },100);
+}
+}
+var entorno = document.getElementById(sitio);
+
+function reordenar(evt) {
+    // se utiliza para sobreponer la pieza que se esta moviendo
+    // guardamos en la variable PADRE el elemento contenedor
+    //de la pieza seleccionada
+    var padre = evt.target.parentNode;
+    // hacemos una copia de elemento seleccionado
+    var clone = padre.cloneNode(true);
+    //Seleccionamos el id del elemento padre
+    var id = padre.getAttribute("id");
+    //se elimina la pieza seleccionada del entorno grafica
+    entorno.removeChild(document.getElementById(id));
+    //agregamos la copia creada
+    entorno.appendChild(clone);
+    // Retornamos el nuevo elemento para que sea seleccionado
+    return entorno.lastChild.firstChild;
+}
+
+//vamos a crear una funcion iman cuando las piezas
+//correctas se acercan
+//creamos los arrays con las posicione correctas
+var origX = [200, 304, 466, 200, 333, 437, 200, 304, 466];
+var origY = [100, 100, 100, 233, 204, 233, 337, 366, 337];
+
+function iman() {
+    for (var i = 0; i < piezas.length; i++) {
+        if (
+            Math.abs(currentPosX - origX[i]) < 15 &&
+            Math.abs(currentPosY - origY[i]) < 15
+        ) {
+            elementSelect.setAttribute("x", origX[i]);
+            elementSelect.setAttribute("y", origY[i]);
+        }
+    }
+}
+
+function chequeo() {
+    ubicada = 0;
+    var padres = document.getElementsByClassName(lugar);
+    console.log("=============");
+    for (var i = 0; i < piezas.length ; i++) {
+        //obtenemos la posicion de cada elemento hijo desde los padres
+        var posx = parseFloat(padres[i].firstChild.getAttribute("x"));
+        var posy = parseFloat(padres[i].firstChild.getAttribute("y"));
+        console.log("Posición: " + posx + "," + posy);
+        //obtenemos el id
+        var idFig = padres[i].getAttribute("id");
+        console.log("idFig: " + idFig);
+        if (idFig.length == 2) {
+            idFig = idFig.charAt(1);
+        } else {
+            idFig = padres[i].getAttribute("id");
+        }
+  
+        if (origX[idFig] == posx && origY[idFig] == posy) {
+           ubicada = ubicada + 1;
+           //document.getElementById("puntos").textContent = "Puntaje: " + ubicada;
+           //console.log("id FigOK: " + idFig);
+        }
+    }
+}
+
+
+
+//Indicamos cual sera la función que ejecutaos al cargar la pagina
+//Evento de Navegador "cargar"
+window.addEventListener("load", contador, false);

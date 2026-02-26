@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+
+body {
+  background-image: url(../IMAGENES/Fondosylogos/fondo.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  overflow: hidden;
+}
+
+#contenedor {
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: 170px auto;
+  position: relative;
+  right: 250px;
+  bottom: 100px;
+  text-align: center;
+}
+
+#contenedor img {
+  width: 100%;
+  height: 100%;
+}
+
+#contenedor p {
+  font-size: 2.2rem;
+  position: absolute;
+  width: 60%;
+  font-family: "Oxanium", sans-serif;
+  bottom: 45%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 7px;
+}
+
+.logo {
+  width: 470px;
+  height: 220px;
+  position: relative;
+  left: 59%;
+  bottom: 700px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+#letra {
+  position: relative;
+  font-family: "Silkscreen", sans-serif;
+  text-align: center;
+  top: 60px;
+}
+
+.boton_volver {
+  width: 220px;
+  height: 100px;
+  position: relative;
+  left: 930px;
+  bottom: 620px;
+}
+
+.boton_volver :hover {
+  transform: scale(1.1);
+}
+
+.boton_volver img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+/*                     RESPONSIVE CELULARES                     */
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+
+
+
+@media (max-width: 400px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contenedor {
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 170px auto;
+    position: relative;
+    right: 2px;
+    bottom: 10px;
+    text-align: center;
+  }
+
+  #contenedor img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contenedor p {
+    font-size: 1.6rem;
+    position: absolute;
+    width: 60%;
+    font-family: "Oxanium", sans-serif;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 7px;
+  }
+
+  .logo {
+    width: 300px;
+    height: 130px;
+    position: relative;
+    left: 8%;
+    bottom: 670px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #letra {
+    position: relative;
+    font-family: "Silkscreen", sans-serif;
+    text-align: center;
+    top: 60px;
+  }
+
+  .boton_volver {
+    width: 150px;
+    height: 80px;
+    position: relative;
+    left: 120px;
+    bottom: 270px;
+  }
+
+  .boton_volver :hover {
+    transform: scale(1.1);
+  }
+
+  .boton_volver img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@media (min-width: 401px) and (max-width: 539px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contenedor {
+    width: 320px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 170px auto;
+    position: relative;
+    right: 2px;
+    bottom: -70px;
+    text-align: center;
+  }
+
+  #contenedor img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contenedor p {
+    font-size: 1.6rem;
+    position: absolute;
+    width: 60%;
+    font-family: "Oxanium", sans-serif;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 7px;
+  }
+
+  .logo {
+    width: 300px;
+    height: 130px;
+    position: relative;
+    left: 12%;
+    bottom: 620px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #letra {
+    position: relative;
+    font-family: "Silkscreen", sans-serif;
+    text-align: center;
+    top: 60px;
+  }
+
+  .boton_volver {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 115px;
+    bottom: 150px;
+  }
+
+  .boton_volver :hover {
+    transform: scale(1.1);
+  }
+
+  .boton_volver img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+/*                     RESPONSIVE TABLET                        */
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 540px) and (max-width: 767px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contenedor {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 170px auto;
+    position: relative;
+    right: -2px;
+    bottom: -30px;
+    text-align: center;
+  }
+
+  #contenedor img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contenedor p {
+    font-size: 1.8rem;
+    position: absolute;
+    width: 60%;
+    font-family: "Oxanium", sans-serif;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 7px;
+  }
+
+  .logo {
+    width: 350px;
+    height: 150px;
+    position: relative;
+    left: 20%;
+    bottom: 700px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #letra {
+    position: relative;
+    font-family: "Silkscreen", sans-serif;
+    text-align: center;
+    top: 60px;
+  }
+
+  .boton_volver {
+    width: 220px;
+    height: 100px;
+    position: relative;
+    left: 160px;
+    bottom: 290px;
+  }
+
+  .boton_volver :hover {
+    transform: scale(1.1);
+  }
+
+  .boton_volver img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contenedor {
+    width: 600px;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+    margin: 170px auto;
+    position: relative;
+    right: -2px;
+    bottom: -150px;
+    text-align: center;
+  }
+
+  #contenedor img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contenedor p {
+    font-size: 2.8rem;
+    position: absolute;
+    width: 60%;
+    font-family: "Oxanium", sans-serif;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 7px;
+  }
+
+  .logo {
+    width: 570px;
+    height: 250px;
+    position: relative;
+    left: 14%;
+    bottom: 820px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #letra {
+    position: relative;
+    font-family: "Silkscreen", sans-serif;
+    text-align: center;
+    top: 60px;
+  }
+
+  .boton_volver {
+    width: 300px;
+    height: 140px;
+    position: relative;
+    left: 260px;
+    bottom: 270px;
+  }
+
+  .boton_volver :hover {
+    transform: scale(1.1);
+  }
+
+  .boton_volver img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+
+@media (min-width: 1024px) and (max-width: 1025px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contenedor {
+    width: 700px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 170px auto;
+    position: relative;
+    right: -2px;
+    bottom: -250px;
+    text-align: center;
+  }
+
+  #contenedor img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contenedor p {
+    font-size: 3rem;
+    position: absolute;
+    width: 60%;
+    font-family: "Oxanium", sans-serif;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 7px;
+  }
+
+  .logo {
+    width: 570px;
+    height: 250px;
+    position: relative;
+    left: 18%;
+    bottom: 800px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #letra {
+    position: relative;
+    font-family: "Silkscreen", sans-serif;
+    text-align: center;
+    top: 60px;
+  }
+
+  .boton_volver {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    left: 330px;
+    bottom: 80px;
+  }
+
+  .boton_volver :hover {
+    transform: scale(1.1);
+  }
+
+  .boton_volver img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 1024px) and (max-width: 1025px) and (min-height:590px) and (max-height: 610px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contenedor {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 170px auto;
+    position: relative;
+    right: 200px;
+    bottom: 70px;
+    text-align: center;
+  }
+
+  #contenedor img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contenedor p {
+    font-size: 2.2rem;
+    position: absolute;
+    width: 60%;
+    font-family: "Oxanium", sans-serif;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 7px;
+  }
+
+  .logo {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 57%;
+    bottom: 560px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #letra {
+    position: relative;
+    font-family: "Silkscreen", sans-serif;
+    text-align: center;
+    top: 60px;
+  }
+
+  .boton_volver {
+    width: 250px;
+    height: 90px;
+    position: relative;
+    left: 700px;
+    bottom: 500px;
+  }
+
+  .boton_volver :hover {
+    transform: scale(1.1);
+  }
+
+  .boton_volver img {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+/*                     RESPONSIVE PC                             */
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+
+@media (min-width: 1800px) and (max-width: 2000px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contenedor {
+    width: 800px;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    margin: 170px auto;
+    position: relative;
+    right: 310px;
+    bottom: -50px;
+    text-align: center;
+  }
+
+  #contenedor img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contenedor p {
+    font-size: 2.6rem;
+    position: absolute;
+    width: 60%;
+    font-family: "Oxanium", sans-serif;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 7px;
+  }
+
+  .logo {
+    width: 540px;
+    height: 280px;
+    position: relative;
+    left: 59%;
+    bottom: 700px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #letra {
+    position: relative;
+    font-family: "Silkscreen", sans-serif;
+    text-align: center;
+    top: 60px;
+  }
+
+  .boton_volver {
+    width: 250px;
+    height: 110px;
+    position: relative;
+    left: 1200px;
+    bottom: 620px;
+  }
+
+  .boton_volver :hover {
+    transform: scale(1.1);
+  }
+
+  .boton_volver img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    overflow: hidden;
+  }
+
+  #contenedor {
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 170px auto;
+    position: relative;
+    right: 240px;
+    bottom: 20px;
+    text-align: center;
+  }
+
+  #contenedor img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contenedor p {
+    font-size: 2.2rem;
+    position: absolute;
+    width: 60%;
+    font-family: "Oxanium", sans-serif;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 7px;
+  }
+
+  .logo {
+    width: 470px;
+    height: 210px;
+    position: relative;
+    left: 59%;
+    bottom: 600px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #letra {
+    position: relative;
+    font-family: "Silkscreen", sans-serif;
+    text-align: center;
+    top: 60px;
+  }
+
+  .boton_volver {
+    width: 250px;
+    height: 120px;
+    position: relative;
+    left: 860px;
+    bottom: 570px;
+  }
+
+  .boton_volver :hover {
+    transform: scale(1.1);
+  }
+
+  .boton_volver img {
+    width: 100%;
+    height: 100%;
+  }
+}

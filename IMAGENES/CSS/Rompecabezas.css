@@ -1,0 +1,1844 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+body {
+    overflow: hidden;
+    background-image: url(../IMAGENES/Fondosylogos/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    font-family: "Oxanium", sans-serif;
+}
+
+#entorno1,
+#entorno2 {
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    top: -570px;
+    left: 50px;
+}
+
+#fondo {
+    opacity: 0.2;
+}
+
+#principal {
+    margin: auto;
+}
+
+.masc {
+    position: relative;
+    top: 20px;
+    left: 1100px;
+    z-index: 2;
+}
+
+.masc img {
+    width: 100px;
+    height: 120px;
+}
+
+button {
+    background: none;
+    border-color: transparent;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+}
+
+.ayuda {
+    margin: auto;
+    color: #000000;
+    font-family: "Oxanium", sans-serif;
+    width: 30%;
+    padding: 40px;
+    height: 290px;
+    text-align: center;
+    position: relative;
+    top: 140px;
+    left: 600px;
+
+}
+
+.ayuda button {
+    position: relative;
+    top: -40px;
+    margin-left: 1%;
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.ayuda button img {
+    width: 80%;
+}
+
+.ayuda img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 1.3rem;
+    position: absolute;
+    left: 50%;
+    bottom: 45%;
+    transform: translate(-50%, 50%);
+}
+
+.contenedor {
+    display: flex;
+    position: fixed;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    top: 0;
+    left: 13%;
+    top: 25px;
+    transition: 2s ease all;
+    opacity: 0;
+    z-index: 2;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#need {
+    background-color: transparent;
+    border: gold solid 3px;
+    border-radius: 75px;
+    left: 1060px;
+    top: 0px;
+    height: 23px;
+    width: 195px;
+    position: relative;
+    text-align: justify;
+    text-align: center;
+    font-family: "Oxanium", sans-serif;
+}
+
+.letra {
+    position: relative;
+    top: -120px;
+    left: 370px;
+    width: 400px;
+    height: 70px;
+    text-align: center;
+}
+
+.letra img {
+    width: 100%;
+    height: 100%;
+}
+
+.letra h1 {
+    font-size: 1.4rem;
+    font-family: "Oxanium", sans-serif;
+    position: absolute;
+    width: 65%;
+    left: 50%;
+    top: 10%;
+    bottom: 45%;
+    transform: translate(-50%, 50%);
+}
+
+#marco {
+    bottom: 330px;
+    left: 40%;
+    top: -200px;
+    width: 820px;
+    height: 550px;
+    position: absolute;
+    transform: translate(-50%, 50%);
+
+}
+
+#marco img {
+    width: 110%;
+    height: 100%;
+}
+
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+/*                     RESPONSIVE CELULARES                     */
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (max-width: 320px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -430px;
+        left: -200px;
+        transform: scale(0.37);
+    }
+
+    .masc {
+        top: 100px;
+        left: 115px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 70px;
+        height: 50px;
+    }
+
+    .ayuda {
+        width: 280px;
+        padding: 20px;
+        height: 200px;
+        top: 200px;
+        left: 20px;
+    }
+
+    .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 50%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .contenedor {
+        width: 50%;
+        left: 17%;
+        top: 10px;
+    }
+
+    #need {
+        left: 103px;
+        top: 90px;
+        width: 110px;
+        height: 15px;
+        font-size: 0.7rem;
+    }
+
+    .letra {
+        top: -40px;
+        left: 30px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .letra img {
+        width: 80%;
+        height: 60%;
+    }
+
+    .letra h1 {
+        font-size: 0.7rem;
+        width: 80%;
+        top: -20%;
+    }
+
+    #marco {
+        left: 50%;
+        top: 10%;
+        width: 270px;
+        height: 260px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 349px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -430px;
+        left: -170px;
+        transform: scale(0.42);
+    }
+
+    .masc {
+        top: 200px;
+        left: 125px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 90px;
+        height: 60px;
+    }
+
+    .ayuda {
+        width: 280px;
+        padding: 20px;
+        height: 200px;
+        top: 200px;
+        left: 20px;
+    }
+
+    .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 50%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .contenedor {
+        width: 50%;
+        left: 17%;
+        top: 10px;
+    }
+
+    #need {
+        left: 100px;
+        top: 200px;
+        width: 150px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    .letra {
+        top: -30px;
+        left: 50px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .letra h1 {
+        font-size: 0.9rem;
+        width: 80%;
+        top: 15%;
+    }
+
+    #marco {
+        left: 50%;
+        top: 30%;
+        width: 320px;
+        height: 260px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (min-width: 350px) and (max-width: 374px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos//\(417\ x\ 914\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -430px;
+        left: -170px;
+        transform: scale(0.42);
+    }
+
+    .masc {
+        top: 200px;
+        left: 125px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 90px;
+        height: 60px;
+    }
+
+    .ayuda {
+        width: 280px;
+        padding: 20px;
+        height: 200px;
+        top: 200px;
+        left: 20px;
+    }
+
+    .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 50%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .contenedor {
+        width: 50%;
+        left: 17%;
+        top: 10px;
+    }
+
+    #need {
+        left: 100px;
+        top: 200px;
+        width: 150px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    .letra {
+        top: -30px;
+        left: 50px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .letra h1 {
+        font-size: 0.9rem;
+        width: 80%;
+        top: 15%;
+    }
+
+    #marco {
+        left: 50%;
+        top: 30%;
+        width: 320px;
+        height: 260px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 380px) {
+
+    body {
+        background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -430px;
+        left: -170px;
+        transform: scale(0.42);
+    }
+
+    .masc {
+        top: 160px;
+        left: 135px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 90px;
+        height: 60px;
+    }
+
+    .ayuda {
+        width: 280px;
+        padding: 20px;
+        height: 200px;
+        top: 200px;
+        left: 20px;
+    }
+
+    .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 50%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .contenedor {
+        width: 50%;
+        left: 20%;
+        top: 70px;
+    }
+
+    #need {
+        left: 115px;
+        top: 150px;
+        width: 150px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    .letra {
+        top: -50px;
+        left: 60px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .letra h1 {
+        font-size: 0.9rem;
+        width: 80%;
+        top: 15%;
+    }
+
+    #marco {
+        left: 50%;
+        top: 25%;
+        width: 320px;
+        height: 260px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 381px) and ( max-width: 400px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos//\(417\ x\ 914\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -450px;
+        left: -170px;
+        transform: scale(0.46);
+    }
+
+    .masc {
+        top: 230px;
+        left: 135px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 90px;
+        height: 60px;
+    }
+
+    .ayuda {
+        width: 280px;
+        padding: 20px;
+        height: 200px;
+        top: 200px;
+        left: 20px;
+    }
+
+    .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 50%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .contenedor {
+        width: 50%;
+        left: 17%;
+        top: 10px;
+    }
+
+    #need {
+        left: 115px;
+        top: 230px;
+        width: 150px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    .letra {
+        top: -20px;
+        left: 60px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .letra h1 {
+        font-size: 0.9rem;
+        width: 80%;
+        top: 15%;
+    }
+
+    #marco {
+        left: 52%;
+        top: 35%;
+        width: 320px;
+        height: 290px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 428px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -450px;
+        left: -150px;
+        transform: scale(0.48);
+    }
+
+    .masc {
+        top: 230px;
+        left: 160px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ayuda {
+        width: 280px;
+        padding: 20px;
+        height: 200px;
+        top: 200px;
+        left: 20px;
+    }
+
+
+    .ayuda button {
+        top: -40px;
+        left: 0px;
+    }
+
+    .ayuda button img {
+        width: 60%;
+        height: 60%;
+    }
+
+    p {
+        font-size: 0.85rem;
+        top: -30px;
+        width: 35%;
+        left: 160px;
+    }
+
+    .contenedor {
+        width: 500px;
+        left: -12%;
+        top: 150px;
+    }
+
+    .contenedor img {
+        height: 170px;
+        width: 170px;
+    } 
+
+    #need {
+        left: 135px;
+        top: 220px;
+        width: 150px;
+        height: 20px;
+        font-size: 1rem;
+    }
+
+    .letra {
+        top: -20px;
+        left: 85px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .letra h1 {
+        font-size: 0.9rem;
+        width: 80%;
+        top: 15%;
+    }
+
+    #marco {
+        left: 52%;
+        top: 35%;
+        width: 350px;
+        height: 290px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 429px) and (max-width: 460px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos//\(417\ x\ 914\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -450px;
+        left: -150px;
+        transform: scale(0.48);
+
+    }
+
+    .masc {
+        top: 230px;
+        left: 160px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ayuda {
+        width: 280px;
+        padding: 20px;
+        height: 200px;
+        top: 200px;
+        left: 20px;
+    }
+
+    .ayuda button {
+        top: -40px;
+        left: 0px;
+    }
+
+    .ayuda button img {
+        width: 70%;
+        height: 70%;
+    }
+
+    p {
+        font-size: 0.85rem;
+        top: -30px;
+        width: 35%;
+        left: 160px;
+    }
+
+    .contenedor {
+        width: 500px;
+        left: -12%;
+        top: 120px;
+    }
+
+    .contenedor img {
+        height: 170px;
+        width: 170px;
+    } 
+
+    #need {
+        left: 135px;
+        top: 220px;
+        width: 150px;
+        height: 20px;
+        font-size: 1rem;
+    }
+
+    .letra {
+        top: -20px;
+        left: 85px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .letra h1 {
+        font-size: 0.9rem;
+        width: 80%;
+        top: 15%;
+    }
+
+    #marco {
+        left: 52%;
+        top: 35%;
+        width: 350px;
+        height: 290px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 600px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos//\(417\ x\ 914\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -450px;
+        left: -150px;
+        transform: scale(0.48);
+
+    }
+
+    .masc {
+        top: 200px;
+        left: 230px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ayuda {
+        width: 280px;
+        padding: 20px;
+        height: 200px;
+        top: 200px;
+        left: 20px;
+    }
+
+    .ayuda button {
+        top: -40px;
+        left: 0px;
+    }
+
+    .ayuda button img {
+        width: 70%;
+        height: 70%;
+    }
+
+    p {
+        font-size: 1rem;
+        top: -20px;
+        width: 50%;
+        left: 155px;
+    }
+
+    .contenedor {
+        width: 500px;
+        left: 2%;
+        top: 120px;
+    }
+
+    .contenedor img {
+        height: 200px;
+        width: 200px;
+    } 
+
+    #need {
+        left: 205px;
+        top: 190px;
+        width: 150px;
+        height: 20px;
+        font-size: 1rem;
+    }
+
+    .letra {
+        top: -50px;
+        left: 155px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .letra h1 {
+        font-size: 0.9rem;
+        width: 80%;
+        top: 15%;
+    }
+
+    #marco {
+        left: 52%;
+        top: 32%;
+        width: 350px;
+        height: 290px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos/_\(768\ x\ 1024\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -470px;
+        left: -110px;
+        transform: scale(0.6);
+
+    }
+
+    .masc {
+        top: 200px;
+        left: 270px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ayuda {
+        width: 200px;
+        padding: 20px;
+        height: 180px;
+        top: 200px;
+        left: 50px;
+    }
+
+    .ayuda button {
+        top: -55px;
+        left: 25px;
+    }
+
+    .ayuda button img {
+        width: 90%;
+        height: 90%;
+    }
+
+    p {
+        font-size: 1.3rem;
+        top: 5px;
+        width: 80%;
+        left: 145px;
+    }
+
+    .contenedor {
+        width: 500px;
+        left: 15%;
+        top: 250px;
+    }
+
+    .contenedor img {
+        height: 250px;
+        width: 250px;
+    }   
+
+    #need {
+        left: 39%;
+        top: 185px;
+        width: 150px;
+        height: 20px;
+        font-size: 1rem;
+    }
+
+    .letra {
+        top: -50px;
+        left: 195px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .letra h1 {
+        font-size: 0.9rem;
+        width: 80%;
+        top: 15%;
+    }
+
+    #marco {
+        left: 51%;
+        top: 29%;
+        width: 450px;
+        height: 320px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 819px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos/_\(768\ x\ 1024\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -575px;
+        left: -30px;
+        transform: scale(0.89);
+
+    }
+
+    .masc {
+        top: 200px;
+        left: 330px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .ayuda {
+        width: 200px;
+        padding: 20px;
+        height: 180px;
+        top: 200px;
+        left: 50px;
+    }
+
+    .ayuda button {
+        top: -55px;
+        left: 25px;
+    }
+
+    .ayuda button img {
+        width: 90%;
+        height: 90%;
+    }
+
+    p {
+        font-size: 1.3rem;
+        top: 5px;
+        width: 80%;
+        left: 145px;
+    }
+
+    .contenedor {
+        width: 500px;
+        left: 10%;
+        top: 170px;
+    }
+
+    .contenedor img {
+        height: 250px;
+        width: 250px;
+    } 
+
+    #need {
+        left: 36%;
+        top: 185px;
+        width: 230px;
+        height: 30px;
+        font-size: 1.4rem;
+    }
+
+    .letra {
+        position: relative;
+        top: -90px;
+        left: 190px;
+        width: 400px;
+        height: 70px;
+        text-align: center;
+    }
+
+    .letra img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .letra h1 {
+        font-size: 1.4rem;
+        font-family: "Oxanium", sans-serif;
+        position: absolute;
+        width: 65%;
+        left: 50%;
+        top: 10%;
+        bottom: 45%;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco {
+        left: 51%;
+        top: 15%;
+        width: 600px;
+        height: 550px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 820px) and ( max-width: 899px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos/_\(768\ x\ 1024\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -600px;
+        left: 0px;
+        transform: scale(0.96);
+
+    }
+
+    .masc {
+        top: 235px;
+        left: 340px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .ayuda {
+        width: 200px;
+        padding: 20px;
+        height: 180px;
+        top: 200px;
+        left: 50px;
+    }
+
+    .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ayuda button {
+        top: -55px;
+        left: 25px;
+    }
+
+    .ayuda button img {
+        width: 90%;
+        height: 90%;
+    }
+
+    p {
+        font-size: 1.3rem;
+        top: 5px;
+        width: 80%;
+        left: 145px;
+    }
+
+    .contenedor {
+        width: 500px;
+        left: 12%;
+        top: 230px;
+    }
+
+    .contenedor img {
+        height: 250px;
+        width: 250px;
+    } 
+
+    #need {
+        left: 36%;
+        top: 225px;
+        width: 230px;
+        height: 30px;
+        font-size: 1.4rem;
+    }
+
+    .letra {
+        position: relative;
+        top: -90px;
+        left: 210px;
+        width: 400px;
+        height: 70px;
+        text-align: center;
+    }
+
+    .letra img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .letra h1 {
+        font-size: 1.4rem;
+        font-family: "Oxanium", sans-serif;
+        position: absolute;
+        width: 65%;
+        left: 50%;
+        top: 10%;
+        bottom: 45%;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco {
+        left: 51%;
+        top: 13%;
+        width: 650px;
+        height: 600px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 919px){
+    body {
+        background-image: url(../IMAGENES/Fondosylogos/_\(768\ x\ 1024\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -640px;
+        left: 40px;
+        transform: scale(1.05);
+
+    }
+
+    .masc {
+        top: 235px;
+        left: 380px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .ayuda {
+        width: 200px;
+        padding: 20px;
+        height: 180px;
+        top: 200px;
+        left: 50px;
+    }
+
+    .ayuda button {
+        top: -55px;
+        left: 25px;
+    }
+
+    .ayuda button img {
+        width: 90%;
+        height: 90%;
+    }
+
+    p {
+        font-size: 1.3rem;
+        top: 5px;
+        width: 80%;
+        left: 145px;
+    }
+
+    .contenedor {
+        width: 500px;
+        left: 15%;
+        top: 250px;
+    }
+
+    .contenedor img {
+        height: 250px;
+        width: 250px;
+    }   
+
+    #need {
+        left: 36%;
+        top: 225px;
+        width: 260px;
+        height: 30px;
+        font-size: 1.6rem;
+    }
+
+    .letra {
+        position: relative;
+        top: -90px;
+        left: 230px;
+        width: 470px;
+        height: 80px;
+        text-align: center;
+    }
+
+    .letra img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .letra h1 {
+        font-size: 1.6rem;
+        font-family: "Oxanium", sans-serif;
+        position: absolute;
+        width: 65%;
+        left: 50%;
+        top: 10%;
+        bottom: 45%;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco {
+        left: 51%;
+        top: 13%;
+        width: 750px;
+        height: 670px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 920px) and (max-width: 1024px) and (min-height: 1000px) and (max-height: 1370px) {
+    body {
+        background-image: url(../IMAGENES/Fondosylogos/_\(768\ x\ 1024\ px\).png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -640px;
+        left: 40px;
+        transform: scale(1.05);
+
+    }
+
+    .masc {
+        top: 235px;
+        left: 440px;
+        width: 90px;
+    }
+
+    .masc img {
+        width: 140px;
+        height: 140px;
+    }
+
+     .ayuda button {
+        top: -55px;
+        left: 50px;
+    }
+
+    .ayuda button img {
+        width: 90%;
+        height: 90%;
+    }
+
+    p {
+        font-size: 1.3rem;
+        top: -40px;
+        width: 80%;
+        left: 165px;
+    }
+
+    .contenedor {
+        width: 500px;
+        left: -37%;
+        top: 300px;
+    }
+
+    .contenedor img {
+        height: 250px;
+        width: 250px;
+    } 
+
+    #need {
+        left: 38%;
+        top: 225px;
+        width: 260px;
+        height: 30px;
+        font-size: 1.6rem;
+    }
+
+    .letra {
+        position: relative;
+        top: -90px;
+        left: 290px;
+        width: 470px;
+        height: 80px;
+        text-align: center;
+    }
+
+    .letra img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .letra h1 {
+        font-size: 1.6rem;
+        font-family: "Oxanium", sans-serif;
+        position: absolute;
+        width: 65%;
+        left: 50%;
+        top: 10%;
+        bottom: 45%;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco {
+        left: 51%;
+        top: 13%;
+        width: 750px;
+        height: 670px;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) and (min-height: 590px) and (max-height: 610px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        top: -530px;
+        left: 20px;
+        transform: scale(0.89);
+    }
+
+    #fondo {
+        opacity: 0.2;
+    }
+
+    #principal {
+        margin: auto;
+    }
+
+    .masc {
+        position: relative;
+        top: 20px;
+        left: 830px;
+        z-index: 2;
+        width: 2%;
+    }
+
+    .masc img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 60%;
+    }
+
+    p {
+        top: -45px;
+        font-size: 1rem;
+    }
+
+    .contenedor {
+        width: 75%;
+        left: -13%;
+        top: 70px;
+    }
+
+    .contenedor img {
+        height: 65%;
+    }   
+
+    #need {
+        left: 790px;
+        top: 0px;
+        height: 23px;
+        width: 195px;
+    }
+
+    .letra {
+        position: relative;
+        top: -120px;
+        left: 280px;
+        width: 400px;
+        height: 70px;
+        text-align: center;
+    }
+
+    .letra img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .letra h1 {
+        font-size: 1.4rem;
+        font-family: "Oxanium", sans-serif;
+        position: absolute;
+        width: 65%;
+        left: 50%;
+        top: 10%;
+        bottom: 45%;
+        transform: translate(-50%, 50%);
+    }
+
+    #marco {
+        bottom: 330px;
+        left: 40%;
+        top: -100px;
+        width: 700px;
+        height: 450px;
+        position: absolute;
+        transform: translate(-50%, 50%);
+
+    }
+
+    #marco img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        display: none;
+        margin: 0 auto;
+        position: relative;
+        top: -570px;
+        left: 50px;
+    }
+
+
+    .masc {
+        position: relative;
+        top: 40px;
+        left: 1050px;
+        z-index: 2;
+        width: 2%;
+    }
+
+   .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 80%;
+    }
+
+    p {
+        top: -70px;
+        font-size: 1.1rem;
+    }
+
+    .contenedor {
+        width: 75%;
+        left: -3%;
+        top: 180px;
+    }
+
+    .contenedor img {
+        height: 65%;
+    }   
+
+    #need {
+        left: 1010px;
+        top: 20px;
+    }
+
+    .letra {
+        position: relative;
+        top: -90px;
+        left: 370px;
+
+    }
+
+    .letra h1 {
+        width: 65%;
+        left: 50%;
+        top: 10%;
+
+    }
+
+    #marco {
+        left: 40%;
+        top: -100px;
+        width: 820px;
+        height: 550px;
+        position: absolute;
+        transform: translate(-50%, 50%);
+
+    }
+
+    #marco img {
+        width: 110%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1800px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        display: none;
+        margin: 0 auto;
+        position: relative;
+        top: -570px;
+        left: 50px;
+    }
+
+
+    .masc {
+        position: relative;
+        top: 70px;
+        left: 1150px;
+        z-index: 2;
+        width: 2%;
+    }
+
+    .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 80%;
+    }
+
+    p {
+        top: -40px;
+        font-size: 1.1rem;
+    }
+
+    .contenedor {
+        width: 65%;
+        left: 10%;
+        top: 210px;
+    }
+
+    .contenedor img {
+        height: 70%;
+    }
+
+    #need {
+        left: 1110px;
+        top: 50px;
+    }
+
+    .letra {
+        position: relative;
+        top: -70px;
+        left: 470px;
+
+    }
+
+    .letra h1 {
+        width: 65%;
+        left: 50%;
+        top: 10%;
+
+    }
+
+    #marco {
+        left: 44%;
+        top: -50px;
+        width: 820px;
+        height: 550px;
+        position: absolute;
+        transform: translate(-50%, 50%);
+
+    }
+
+    #marco img {
+        width: 110%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1801px) and (max-width: 2560px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+        min-height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #entorno1,
+    #entorno2 {
+        transform: scale(1.2);
+        top: -630px;
+        left: 100px;
+    }
+
+
+    .masc {
+        position: relative;
+        top: 70px;
+        left: 1570px;
+        z-index: 2;
+    }
+
+    .masc img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .ayuda button {
+        top: -35px;
+    }
+
+    .ayuda button img {
+        width: 100%;
+    }
+
+    p {
+        top: -40px;
+        font-size: 1.5rem;
+    }
+
+    .contenedor {
+        width: 65%;
+        left: 20%;
+        top: 240px;
+    }
+
+    .contenedor img {
+        height: 95%;
+    }
+
+    #need {
+        left: 1510px;
+        top: 50px;
+        font-size: 1.7rem;
+        width: 270px;
+        height: 40px;
+    }
+
+    .letra {
+        position: relative;
+        top: -70px;
+        left: 740px;
+
+    }
+
+    .letra img {
+        width: 100%;
+        height: 80px;
+    }
+
+    .letra h1 {
+        width: 95%;
+        left: 50%;
+        top: 10%;
+        font-size: 1.7rem;
+    }
+
+    #marco {
+        left: 47%;
+        top: -100px;
+        width: 920px;
+        height: 650px;
+        position: absolute;
+        transform: translate(-50%, 50%);
+
+    }
+
+    #marco img {
+        width: 110%;
+        height: 100%;
+    }
+}

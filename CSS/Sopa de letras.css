@@ -1,0 +1,9409 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+body {
+  overflow: hidden;
+  background-image: url(../IMAGENES/Fondosylogos/Fondo.png);
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  user-select: none;
+  font-family: "Oxanium", sans-serif;
+}
+
+h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -90px;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 35px;
+  text-align: center;
+  left: 13%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 450px;
+  left: 76%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 73%;
+  bottom: 430px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 30%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 95%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -366px;
+  width: 110%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -605%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: 190px;
+  left: 46.5%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+#temas {
+  position: relative;
+  left: 10%;
+  top: 120px;
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  left: 42%;
+  top: 80px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 242px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 240px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+/*                     RESPONSIVE CELULARES                     */
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 370px) and (max-width: 380px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.75);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+  }
+
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -220px;
+  left: -45%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -50px;
+  text-align: center;
+  left: -30%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 265px;
+  left: 25%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 15%;
+  bottom: 255px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: -8%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 290px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 18px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 350px;
+  height: 380px;
+  bottom: -10px;
+  left: 35%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: -37%;
+  top: 80px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: -4%;
+  top: 170px;
+}
+
+#geometria {
+  width: 172px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 170px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+
+@media (min-width: 396px) and (max-width: 400px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.75);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+  }
+
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -220px;
+  left: -45%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -50px;
+  text-align: center;
+  left: -30%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 265px;
+  left: 25%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 15%;
+  bottom: 255px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 290px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 18px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 350px;
+  height: 380px;
+  bottom: -10px;
+  left: 35%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: -37%;
+  top: 80px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: -4%;
+  top: 170px;
+}
+
+#geometria {
+  width: 172px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 170px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 413px) and (max-width: 415px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    left: -15%;
+  position: relative;
+  }
+  
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -160px;
+  left: -20%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -50px;
+  text-align: center;
+  left: -5%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: -390px;
+  left:39%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 32%;
+  bottom: -305px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 210px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 360px;
+  height: 340px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 22px;
+  height: 22px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 400px;
+  height: 430px;
+  bottom: 85px;
+  left: 49%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: -6%;
+  top: 80px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 12%;
+  top: 190px;
+}
+
+#geometria {
+  width: 192px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 190px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 430px) and (max-width: 539px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    left: -35%;
+  position: relative;
+  }
+  
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -210px;
+  left: -20%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -50px;
+  text-align: center;
+  left: -5%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 320px;
+  left:39%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 32%;
+  bottom: 305px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 210px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 360px;
+  height: 340px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 22px;
+  height: 22px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 400px;
+  height: 430px;
+  bottom: 85px;
+  left: 49%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 15%;
+  top: 80px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 12%;
+  top: 190px;
+}
+
+#geometria {
+  width: 192px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 190px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 414px) and (max-width: 415px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    left: -15%;
+  position: relative;
+  }
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 323px;
+  left: 40%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 33%;
+  bottom: 310px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 320px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 20px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 370px;
+  height: 380px;
+  bottom: 75px;
+  left: 49%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 10%;
+  top: 140px;
+}
+
+#geometria {
+  width: 202px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 200px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 414px) and (max-width: 415px) and (min-height:724px) and (max-height: 739px) {
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+  #principal {
+    transform: scale(0.75);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+  }
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -175px;
+  left: -18%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 480px;
+  left: 36%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 25%;
+  bottom: 470px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 95px;
+  left: 51%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 12%;
+  top: 140px;
+}
+
+#geometria {
+  width: 182px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 180px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 411px) and (max-width: 412px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+  padding:0;
+  
+}
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -115px;
+  left: -18%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 645px;
+  left: 36%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 25%;
+  bottom: 635px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 110px;
+  left: 51%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 10%;
+  top: 140px;
+}
+
+#geometria {
+  width: 202px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 200px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 411px) and (max-width: 413px) and (min-height:720px) and (max-height: 739px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+  padding:0;
+}
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: 195px;
+  left: -18%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 305px;
+  left: 36%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 25%;
+  bottom: 635px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 115px;
+  left: 51%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 10%;
+  top: 100px;
+}
+
+#geometria {
+  width: 202px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 200px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 425px) and (max-width: 429px)  {
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+  }
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -195px;
+  left: -18%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: 30%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: relative;
+  bottom: 655px;
+  left: 86%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 25%;
+  bottom: 635px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 55px;
+  left: 51%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 13%;
+  top: 160px;
+}
+
+#geometria {
+  width: 182px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 180px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 320px) and (max-width: 340px) {
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.75);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+  }
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 250px;
+  height: auto;
+  top: -50px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.1rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 285px;
+  left: 37%;
+}
+
+.masc img {
+  width: 60px;
+  height: 80px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 23%;
+  bottom: 280px;
+  height: 20px;
+  width: 160px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 3;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 230px;
+  height: 290px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 12px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 270px;
+  height: 360px;
+  bottom: 240px;
+  left: 51%;
+  transform: translate(-50%, 50%);
+  display: none;
+  z-index: 2;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 180px;
+  height: auto;
+  left: 1%;
+  top: 60px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -200px;
+  left: -18%;
+}
+
+#temas {
+  position: relative;
+  left: 15%;
+  top: 90px;
+}
+
+#geometria {
+  width: 132px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 10px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 130px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 10px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 350px) and (max-width: 366px) {
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    position: relative;
+    left: -50px;
+    height: 700px;
+  }
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: fixed;
+  bottom: 425px;
+  left: 39%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 30%;
+  bottom: 420px;
+  height: 20px;
+  width: 180px;
+  position: fixed;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 550px;
+  left: 57%;
+     z-index: 5;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: -10px;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 215%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -300px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: -105px;
+  z-index: -5;
+  left: 17%;
+  transform: translate(-50%, 50%);
+  display: none;
+  transform: scale(1.0);
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: 30px;
+  left: -20%;
+}
+
+#temas {
+  position: relative;
+  left: 55%;
+  top: 130px;
+  width: 30px;
+}
+
+#geometria {
+  width: 152px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 10px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 150px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: -10px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 390px) and (max-width: 395px) {
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    position: relative;
+    left: -52px;
+  }
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -50%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 205px;
+  left: 36%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 35%;
+  bottom: 480px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 115px;
+  left: 51%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: 50px;
+  left: -18%;
+}
+
+#temas {
+  position: relative;
+  left: 55%;
+  top: 100px;
+  width: 30px;
+}
+
+#geometria {
+  width: 152px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 10px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 150px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: -10px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 380px) and (max-width: 394px) {
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: 800px;
+  }
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 505px;
+  left: 39%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 30%;
+  bottom: 500px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 45px;
+  left: 51%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: 100px;
+  left: -18%;
+}
+
+#temas {
+  position: relative;
+  left: 55%;
+  top: 140px;
+  width: 30px;
+}
+
+#geometria {
+  width: 182px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 10px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 180px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: -10px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 340px) and (max-width: 344px) {
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: 800px;
+    position: relative;
+    left: -39px;
+  }
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 550px;
+  left: 36%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 27%;
+  bottom: 540px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 85px;
+  left: 48%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: 130px;
+  left: -18%;
+}
+
+#temas {
+  position: relative;
+  left: 55%;
+  top: 140px;
+  width: 30px;
+}
+
+#geometria {
+  width: 182px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 10px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 180px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: -10px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 411px) and (max-width: 413px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+  }
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -115px;
+  left: -18%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 405px;
+  left: 36%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 25%;
+  bottom: 635px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 115px;
+  left: 51%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 10%;
+  top: 140px;
+}
+
+#geometria {
+  width: 202px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 200px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+  /*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 411px) and (max-width: 412px) {
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    position: relative;
+    left: -62px;
+  }
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -145px;
+  left: -18%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -30px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 325px;
+  left: 40%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 33%;
+  bottom: 305px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: -155px;
+  left: 22%;
+  transform: translate(-50%, 50%);
+  display: none;
+  transform: scale(1.20);
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 10%;
+  top: 180px;
+}
+
+#geometria {
+  width: 202px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 200px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+  /*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 411px) and (max-width: 412px) and (min-height:730px) and (max-height: 750px){
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.75);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+  }
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -205px;
+  left: -18%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -35px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 475px;
+  left: 36%;
+}
+
+.masc img {
+  width: 80px;
+  height: 100px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 25%;
+  bottom: 455px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 95px;
+  left: 51%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 1%;
+  top: 100px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 10%;
+  top: 140px;
+}
+
+#geometria {
+  width: 162px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 160px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+/*                     RESPONSIVE TABLET                        */
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 540px) and (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(1.10);
+    transform-origin: top center; 
+    width: 133%; 
+    height: 710px;
+    left: -15%;
+  position: relative;
+  }
+
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -220px;
+  left: -20%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 300px;
+  height: auto;
+  top: -50px;
+  text-align: center;
+  left: -1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.2rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 490px;
+  left: 44%;
+}
+
+.masc img {
+  width: 60px;
+  height: 80px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 37%;
+  bottom: 475px;
+  height: 20px;
+  width: 180px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 80%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 57%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 15%;
+  transition: 2s ease all;
+  opacity: 0;
+   z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 3;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -270px;
+  width: 90%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -360%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 195px;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 15px;
+  height: 20px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  bottom: 140px;
+  left: 51%;
+  z-index: 2;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 2%;
+  top: 80px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#temas {
+  position: relative;
+  left: 12%;
+  top: 140px;
+}
+
+#geometria {
+  width: 142px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 140px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  td {
+    width: auto !important;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 768px) and (max-width: 819px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(1.10);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    left: 4%;
+  position: relative;
+  }
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 35px;
+  text-align: center;
+  left: -19%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 180px;
+  left: 32%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 28%;
+  bottom: 170px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 60%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 55%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+  z-index: 2;
+
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -266px;
+  width: 110%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -355%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: -70px;
+  left: 37%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -265px;
+  left: -35%;
+}
+#temas {
+  position: relative;
+  left: -8%;
+  top: 300px;
+  
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 220px;
+  height: 70px;
+  left: 120%;
+  top: 120px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 234px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 232px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+}
+
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+
+@media (min-width: 850px) and (max-width: 851px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(1.10);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    left: 4%;
+  position: relative;
+  }
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 35px;
+  text-align: center;
+  left: -19%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 700px;
+  left: 40%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 35%;
+  bottom: 690px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 60%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 55%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+  z-index: 2;
+
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 60%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -366px;
+  width: 110%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -605%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: -100px;
+  left: 49%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -265px;
+  left: -35%;
+}
+#temas {
+  position: relative;
+  left: -8%;
+  top: 300px;
+  
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 220px;
+  height: 70px;
+  left: 120%;
+  top: 120px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 234px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 232px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 820px) and (max-width: 830px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(1.10);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    left: 3%;
+  position: relative;
+  }
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 35px;
+  text-align: center;
+  left: -19%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 180px;
+  left: 30%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 25%;
+  bottom: 160px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 60%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 55%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+  z-index: 2;
+
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -266px;
+  width: 100%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -355%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: -100px;
+  left: 35%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -285px;
+  left: -35%;
+}
+#temas {
+  position: relative;
+  left: -8%;
+  top: 300px;
+  
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 220px;
+  height: 70px;
+  left: 120%;
+  top: 120px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 234px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 232px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 852px) and (max-width: 1023px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+   padding:0;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 35px;
+  text-align: center;
+  left: -15%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 970px;
+  left: 43%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 38%;
+  bottom: 960px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 60%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 55%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -267px;
+  width: 110%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -355%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: -40px;
+  left: 49%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -275px;
+  left: -30%;
+}
+#temas {
+  position: relative;
+  left: -5%;
+  top: 300px;
+  
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 250px;
+  height: auto;
+  left: 120%;
+  top: 120px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 254px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 252px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 830px) and (max-width: 852px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+   padding:0;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 35px;
+  text-align: center;
+  left: -15%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 970px;
+  left: 43%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 38%;
+  bottom: 960px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 60%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 55%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 5%;
+  transition: 2s ease all;
+  opacity: 0;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -267px;
+  width: 110%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -355%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: -40px;
+  left: 49%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -275px;
+  left: -30%;
+}
+#temas {
+  position: relative;
+  left: -5%;
+  top: 300px;
+  
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 250px;
+  height: auto;
+  left: 120%;
+  top: 120px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 254px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 252px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 900px) and (max-width: 947px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/\(417\ x\ 914\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+   padding:0;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 35px;
+  text-align: center;
+  left: -15%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 1050px;
+  left: 41%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 37%;
+  bottom: 1030px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 60%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 55%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 7%;
+  transition: 2s ease all;
+  opacity: 0;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -267px;
+  width: 110%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -355%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: -40px;
+  left: 49%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+ h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: 75px;
+  left: -27%;
+}
+#temas {
+  position: relative;
+  left: -2%;
+  top: 300px;
+  
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 250px;
+  height: auto;
+  left: 120%;
+  top: 120px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 254px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 252px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+/*                     RESPONSIVE protatiles                      */
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 1270px) and (max-width: 1365px) {
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/fondo.png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(1.10);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    position: relative;
+    left: -6%;
+  }
+
+
+h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -90px;
+  left: 6%;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 35px;
+  text-align: center;
+  left: 17%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 370px;
+  left: 66%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 63%;
+  bottom: 350px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 30%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 95%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 9%;
+  transition: 2s ease all;
+  opacity: 0;
+
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -366px;
+  width: 110%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -605%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: 140px;
+  left: 42%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+#temas {
+  position: relative;
+  left: 14%;
+  top: 120px;
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 220px;
+  height: 70px;
+  left: 70%;
+  top: 80px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 242px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 240px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/
+@media (min-width: 1024px) and (max-width: 1025px) {
+  body {
+    background-image: url(../IMAGENES/Fondosylogos/_\(768\ x\ 1024\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding:0;
+  }
+
+  h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: 370px;
+  left: -37px;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 40px;
+  text-align: center;
+  left: 5%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 1120px;
+  left: 82%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 78%;
+  bottom: 1100px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 60%;
+  padding: 40px;
+  height: 300px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 60%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 12%;
+  transition: 2s ease all;
+  opacity: 0;
+
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top:50%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -276px;
+  width: 110%;
+  bottom: 145%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -365%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: -290px;
+  left: 24%;
+  transform: translate(-50%, 50%);
+  display: none;
+  z-index: -5;
+  transform: scale(1.20);
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+#temas {
+  position: relative;
+  left: 7%;
+  top: 150px;
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 250px;
+  height: 70px;
+  left: 20%;
+  top: 120px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 302px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 300px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+}
+/*══════════════════════════════════════════════════════════════*/
+/*══════════════════════════════════════════════════════════════*/ 
+
+@media (min-width: 1024px) and (max-width: 1025px) and (min-height:590px) and (max-height: 610px){
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+   body {
+     background-image: url(../IMAGENES/Fondosylogos/fondo.png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  #principal {
+    transform: scale(0.90);
+    transform-origin: top center; 
+    width: 133%; 
+    height: auto;
+    position: relative;
+    left: -66px;
+  }
+h4 {
+  font-family: "Oxanium", sans-serif;
+  position: relative;
+  bottom: -90px;
+  left: -80px;
+}
+
+.letra-01 {
+  position: relative;
+  left: 30px;
+  top: 70px;
+  font-family: "Oxanium", sans-serif;
+}
+
+.caja{
+  font-family: "Oxanium", sans-serif;
+
+}
+
+.marco-palabras {
+  left: 7%;
+  width: 330px;
+  height: 435px;
+  position: relative;
+  bottom: 550px;
+  text-align: center;
+}
+.marco-palabras img {
+  width: 100%;
+  height: 100%;
+}
+
+.letra {
+  position: relative;
+  width: 480px;
+  height: 80px;
+  top: 35px;
+  text-align: center;
+  left: 1%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.letra img {
+  width: 100%;
+  height: 100%;
+}
+.letra h1 {
+  font-size: 1.4rem;
+  font-family: "oxanium", sans-serif;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 34%;
+  transform: translate(-50%, 50%);
+}
+
+.button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.masc {
+  position: absolute;
+  bottom: 350px;
+  left: 68%;
+}
+
+.masc img {
+  width: 100px;
+  height: 120px;
+}
+
+#need {
+  background-color: transparent;
+  border: gold solid 3px;
+  border-radius: 75px;
+  left: 65%;
+  bottom: 340px;
+  height: 23px;
+  width: 195px;
+  position: absolute;
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+button {
+  background: none;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.ayuda {
+  margin: auto;
+  color: #000000;
+  color: #000000;
+  font-family: "Oxanium", sans-serif;
+  width: 30%;
+  padding: 40px;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: 360px;
+  left: 95%;
+}
+.ayuda img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayuda button {
+  position: relative;
+  top: -50px;
+  margin-left: 1%;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.ayuda button img{
+  width: 100%;
+  height: 100%;
+}
+.ayuda p {
+  font-size: 1rem;
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  bottom: 47%;
+  transform: translate(-50%, 50%);
+}
+
+.contenedor {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: -8%;
+  transition: 2s ease all;
+  opacity: 0;
+
+  transform: translate(-50%, -50%);
+}
+
+#VerPalabras {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 400px;
+}
+
+#VerPalabras img {
+  width: 100%;
+  height: 100%;
+}
+#listaPalabras {
+  font-size: 1rem;
+  position: absolute;
+  left: -366px;
+  width: 110%;
+  bottom: 155%;
+  transform: translate(-50%, 50%);
+}
+
+#cerrar {
+  position: relative;
+  border-radius: 10px;
+  top: -110px;
+  left: -605%;
+  width: 100px;
+  height: auto;
+}
+#cerrar img {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#cajas {
+  position: absolute;
+  bottom: 215px;
+  left: 53%;
+  transform: translate(-50%, 50%);
+  width: 440px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.caja {
+  margin: 3px;
+  width: 28px;
+  height: 25px;
+  line-height: 28px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  float: left;
+  background-color: #fff;
+  color: #4d0a67;
+  z-index: 1;
+}
+
+.marco-sopa {
+  position: relative;
+  width: 500px;
+  height: 460px;
+  bottom: 190px;
+  left: 46.5%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+.marco-sopa img {
+  width: 100%;
+  height: 100%;
+}
+.marco-sopa.show {
+  display: block;
+}
+
+em {
+  font-family: "Silkscreen", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+#temas {
+  position: relative;
+  left: 5%;
+  top: 120px;
+}
+
+#letras {
+  position: relative;
+  font-size: 1.3rem;
+  left: 50%;
+  bottom: 370px;
+}
+
+#botonVer {
+  position: relative;
+  width: 200px;
+  height: 70px;
+  left: 42%;
+  top: 80px;
+  z-index: 1;
+}
+#botonVer:hover {
+  transform: scale(1.1);
+}
+#botonVer img {
+  width: 100%;
+  height: 100%;
+}
+
+#geometria {
+  width: 242px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#geometria img {
+  width: 100%;
+  height: 100%;
+}
+#geometria:hover {
+  transform: scale(1.1);
+}
+#animales {
+  width: 240px;
+  height: auto;
+  position: relative;
+  right: 40px;
+  top: 20px;
+}
+#animales:hover {
+  transform: scale(1.1);
+}
+#animales img {
+  width: 100%;
+  height: 100%;
+}
+
+#letras {
+  position: relative;
+  left: 14%;
+}
+}

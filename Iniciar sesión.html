@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/Inicio Sesión.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="IMAGENES/Fondosylogos/Logo2.png">
+  <script src="JavaScript/sweetalert2.all.min.js"></script>
+  <script src="JavaScript/iniciosesion.js"></script>
+  <title>Iniciar Sesión</title>
+</head>
+
+<body>
+  <div>
+    <img src="IMAGENES/Fondosylogos/logo transparente.png" alt="logo" id="logo">
+  </div>
+
+  <div id="contenedor">
+    <section class="form-login">
+      <img src="IMAGENES/Registro/marco_RA1.png" alt="">
+      <h3>Iniciar Sesión</h3><br>
+
+      <form action="Pantalla Principal.html" method="post">
+        <input class="controles" type="text" name="usuario" id="usuario" placeholder="Usuario" required />
+        <input class="controles_2" type="password" name="clave" id="clave" placeholder="Contraseña" required />
+        <input class="boton" type="button" id="login" value="Ingresar">
+
+        <p id="si_cuenta">
+          <a href="Registro.html">¿No tienes cuenta? ¡Crea una!</a>
+        </p>
+
+
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>

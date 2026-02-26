@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopa de Letras</title>
+    <link rel="stylesheet" href="CSS/Sopa de letras.css">
+    <link rel="shortcut icon" href="IMAGENES/Fondosylogos/Logo2.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JavaScript/sopa de letras.js"></script>
+    <script src="JavaScript/ayuda.js"></script>
+</head>
+<body>
+
+<div id="principal">
+      <table>
+        <tr>
+          <td width="15%" align="right">
+            <button type="button" id="botonVer" value="botonVer">
+              <em><img src="IMAGENES/botones/Lista_Palabras.png" alt="Lista Palabras"></em>
+            </button>
+          </td>
+          <td align="center" width ="50%">
+          <div class="letra"><img src="IMAGENES/Fondosylogos/marco-niv.png" alt=""><h1>Nivel 3 - Sopa de letras</h1> </div>
+          </td>
+          <td>
+          </td>
+        </tr>
+
+        <tr id="temas" >
+          <td></td>
+          <td align="center">
+            <button type="button" id="geometria" value="boton"><em><img src="IMAGENES/botones/boton-scracht.png" alt=""></em></button
+            >&nbsp;&nbsp;
+            <button type="button" id="animales" value="boton"><em><img src="IMAGENES/botones/boton-diagramas.png" alt=""></em></button
+            >&nbsp;&nbsp;
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td ><div id="letras" align="center"><em><h4>Selecione el Tema</h4></em></div></td>
+          <td><span></span></td>
+        </tr>
+      </table>
+
+  
+
+       <div class="masc">
+      <button id="boton">
+      <img src="IMAGENES/Pantalla de carga/tortugapixel.png" alt="" >
+      </button>
+    <div class="contenedor" id="contenedor">
+		   	<div class="ayuda">
+          <img src="IMAGENES/Sopa de letras/marco-sopa.png" alt="">
+			    <p class="p" id="mensaje">
+			    	 Para resolver la sopa de letras tienes que descubrir las palabras de
+            la lista, enlazando las letras de forma HORIZONTAL, VERTICAL O
+            DIAGONAL y en cualquier sentido
+			    </p>		    
+			    <br></br>
+			    <button type="button" id="close" value = "close">
+			         <img src="IMAGENES/botones/cerrar.png" alt="">
+			    </button>
+        </div>
+		    </div>
+        </div>
+      <div class="contenedor" id="VerPalabras">
+        <img src="IMAGENES/Sopa de letras/marco-s.png" >
+        <div class= "ayuda" align="center">
+
+          <p class="p" id="listaPalabras">
+          SE CARGAN CUANDO SELECCIONES UNA SOPA DE LETRAS
+          </p>
+          <br><br>
+          <button type="button" id="cerrar" value="cerrar"> <img src="IMAGENES/botones/cerrar.png" alt=""></button>
+        </div>
+      </div>
+        <div class="marco-sopa">   
+              <img src="IMAGENES/Sopa de letras/marco-sopa.png" alt="">
+      <div id="cajas">  
+      </div>
+      </div>   
+<div id="need">¿Necesitas ayuda?</div> 
+</div>
+
+</body>
+</html>
