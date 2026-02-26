@@ -66,7 +66,7 @@ El jugador puede elegir entre:
 
    cd CodeMasters
 
-3. Abrir el archivo `index.html` en el navegador.
+3. Abrir el archivo `pantalla de carga.html` en el navegador.
 
 ---
 
@@ -90,3 +90,4 @@ El jugador puede elegir entre:
 ## Estado del proyecto
 
 Finalizado.
+
